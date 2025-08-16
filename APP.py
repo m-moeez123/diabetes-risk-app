@@ -93,12 +93,9 @@ import matplotlib.pyplot as plt
 
 # Load the saved artifacts
 # Define the directory where artifacts were saved
-artifact_dir = '/kaggle/working/diabetes_app_artifacts'
-
-# Load the trained XGBoost model
+artifact_dir = "diabetes_app_artifacts"  # Use relative path
 model_path = os.path.join(artifact_dir, 'xgb_model.joblib')
-xgb_model = joblib.load(model_path)
-
+preprocessor_path = os.path.join(artifact_dir, 'preprocessor.joblib')
 # Load the fitted ColumnTransformer
 preprocessor_path = os.path.join(artifact_dir, 'preprocessor.joblib')
 preprocessor = joblib.load(preprocessor_path)
@@ -210,4 +207,5 @@ recommendations_placeholder = st.empty()
 
 # Placeholder for Phenotype Cluster (Optional)
 st.subheader("Patient Phenotype Cluster")
+
 cluster_placeholder = st.empty()
