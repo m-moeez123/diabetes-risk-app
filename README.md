@@ -56,5 +56,5 @@ A Streamlit application is provided to demonstrate the project. It allows users 
 
 3.      streamlit run app.py
 
-4.  **APP LINK **
-5.  https://diabetes-risk-app-bb3rp34wfqogc844bpywt8.streamlit.app/
+4.  **APP LINK**
+5.  https://diabetes-risk-app-g5dmggwdhqpjtnxkpdshwd.streamlit.app/
